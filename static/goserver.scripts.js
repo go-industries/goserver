@@ -16,6 +16,8 @@ const promises_1 = require("fs/promises");
 const goserver_config_json_1 = __importDefault(require("./goserver.config.json"));
 const child_process_1 = require("child_process");
 const path_1 = __importDefault(require("path"));
+// THE node.exe FILE PATH
+const nodePath = path_1.default.resolve(__dirname, "node", "node");
 // THE SCRIPTS VALUE
 const scripts = goserver_config_json_1.default.scripts;
 const baseDirectory = __dirname;
@@ -44,7 +46,7 @@ const runStaticScripts = () => __awaiter(void 0, void 0, void 0, function* () {
             runScripts(script);
         }
         // START THE EXPRESS SERVER
-        runScripts("node goserver-express-server.js");
+        runScripts("${nodePath} goserver-express-server.js");
     });
     // METHOD RESPONSIBLE FOR PROCESSING THE scripts VARIABLE IF IT'S AN OBJECT
     const runScriptsObject = (scripts) => __awaiter(void 0, void 0, void 0, function* () {
@@ -65,7 +67,7 @@ const runStaticScripts = () => __awaiter(void 0, void 0, void 0, function* () {
             }
         }
         // START THE EXPRESS SERVER
-        runScripts("node goserver-express-server.js");
+        runScripts("${nodePath} goserver-express-server.js");
     });
     // IF THE scripts VARIABLE IS AN ARRAY
     if (Array.isArray(scripts))
@@ -103,7 +105,7 @@ const runServerScripts = () => __awaiter(void 0, void 0, void 0, function* () {
             }
         }
         // RUN THE COMMAND WITH THE START KEYWORD OR  RUN THE FILE SPECIFIED IN THE entry PROPERTY
-        runScripts(scripts["start"] || `node ${goserver_config_json_1.default.entry}`);
+        runScripts(scripts["start"] || `${nodePath} ${goserver_config_json_1.default.entry}`);
     });
     // IF THE scripts VARIABLE IS AN ARRAY
     if (Array.isArray(scripts))
