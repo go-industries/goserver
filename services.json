@@ -1,0 +1,15 @@
+[
+	{
+		"name": "my-portfolio",
+		"configuration": {
+			"description": "This is my portfolio website",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/my-portfolio/goserver-express-server.js"
+		},
+		"date": "2023-05-10T16:01:54.667Z",
+		"status": "uninstalled"
+	}
+]

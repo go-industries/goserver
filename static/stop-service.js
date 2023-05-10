@@ -7,15 +7,21 @@ const goserver_config_json_1 = __importDefault(require("./goserver.config.json")
 const path_1 = __importDefault(require("path"));
 const StopService = (Service) => {
     const returnScript = (goServerConfig) => {
-        if (goServerConfig.type === "static")
-            return {
-                script: path_1.default.resolve(__dirname, "./goserver-express-server.js"),
-            };
         if (goServerConfig.scripts)
             return {
-                script: path_1.default.resolve(__dirname, "./goserver.scripts.js"),
+                script: path_1.default
+                    .resolve(__dirname, "goserver.scripts.js")
+                    .replace(/\\/g, "/"),
             };
-        return { script: path_1.default.resolve(__dirname, goServerConfig.entry) };
+        if (goServerConfig.type === "static")
+            return {
+                script: path_1.default
+                    .resolve(__dirname, "goserver-express-server.js")
+                    .replace(/\\/g, "/"),
+            };
+        return {
+            script: path_1.default.resolve(__dirname, goServerConfig.entry).replace(/\\/g, "/"),
+        };
     };
     const service = new Service(Object.assign(Object.assign(Object.assign({}, goserver_config_json_1.default.service), { name: goserver_config_json_1.default.name }), returnScript(goserver_config_json_1.default)));
     if (goserver_config_json_1.default === null || goserver_config_json_1.default === void 0 ? void 0 : goserver_config_json_1.default.serviceConfigFunction) {
