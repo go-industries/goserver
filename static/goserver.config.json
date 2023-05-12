@@ -1,0 +1,12 @@
+{
+    "name": "",
+    "service": {
+        "description": ""
+    },
+    "serviceConfigFunction": { "args": [], "body": "" },
+    "type": "",
+    "scripts": [""],
+    "rootDirectory": "./",
+    "useServerNodeJs": true,
+    "entry": ""
+}

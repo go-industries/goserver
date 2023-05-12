@@ -1,3 +1,16 @@
 index.js
 index.js.LICENSE.txt
 /projects
+node/node.exe
+*.zip
+**/node-windows-dependencies
+**/node-mac-dependencies
+install-windows-service.js
+install-macos-service.js
+start-windows-service.js
+start-macos-service.js
+stop-windows-service.js
+stop-macos-service.js
+uninstall-macos-service.js
+uninstall-windows-service.js
+services.json
