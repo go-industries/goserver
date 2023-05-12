@@ -1,0 +1,80 @@
+[
+	{
+		"name": "my-portfolio",
+		"configuration": {
+			"description": "This is my portfolio website",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/my-portfolio/goserver-express-server.js"
+		},
+		"date": "2023-05-11T17:34:45.071Z",
+		"status": "uninstalled"
+	},
+	{
+		"name": "myportfolio",
+		"configuration": {
+			"description": "This is my portfolio website",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/myportfolio/goserver-express-server.js"
+		},
+		"date": "2023-05-11T11:05:59.918Z",
+		"status": "uninstalled"
+	},
+	{
+		"name": "my_portfolio",
+		"configuration": {
+			"description": "This is my portfolio website",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/my_portfolio/goserver-express-server.js"
+		},
+		"date": "2023-05-11T11:06:51.930Z",
+		"status": "uninstalled"
+	},
+	{
+		"name": "my portfolio",
+		"configuration": {
+			"description": "This is my portfolio website",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/my portfolio/goserver-express-server.js"
+		},
+		"date": "2023-05-11T11:07:56.435Z",
+		"status": "uninstalled"
+	},
+	{
+		"name": "my^portfolio",
+		"configuration": {
+			"description": "This is my portfolio website",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/my^portfolio/goserver-express-server.js"
+		},
+		"date": "2023-05-11T12:49:11.747Z",
+		"status": "uninstalled"
+	},
+	{
+		"name": "gochat",
+		"configuration": {
+			"description": "",
+			"env": {
+				"name": "PORT",
+				"value": "1001"
+			},
+			"script": "C:/Users/LENOVO/Documents/Programming/javascript/goserver-console/dist/projects/gochat/goserver.scripts.js"
+		},
+		"date": "2023-05-11T17:38:20.521Z",
+		"status": "installed"
+	}
+]
