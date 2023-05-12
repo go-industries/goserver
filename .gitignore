@@ -12,3 +12,4 @@ stop-linux-service.js
 stop-macos-service.js
 uninstall-macos-service.js
 uninstall-linux-service.js
+services.json
